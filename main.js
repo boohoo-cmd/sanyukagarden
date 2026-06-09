@@ -44,6 +44,24 @@
     });
   }
 
+  // Menu tabs
+  var tabs = document.querySelectorAll('.tab');
+  var panels = document.querySelectorAll('.tab-panel');
+  if (tabs.length && panels.length) {
+    tabs.forEach(function (tab) {
+      tab.addEventListener('click', function () {
+        var target = tab.getAttribute('data-tab');
+        tabs.forEach(function (t) { t.classList.remove('active'); });
+        panels.forEach(function (p) { p.classList.remove('active'); });
+        tab.classList.add('active');
+        var panel = document.getElementById('panel-' + target);
+        if (panel) panel.classList.add('active');
+        // re-trigger reveals inside the newly shown panel
+        if (panel) panel.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('in'); });
+      });
+    });
+  }
+
   // Scroll reveal
   var reveals = document.querySelectorAll('.reveal');
   if ('IntersectionObserver' in window && reveals.length) {

@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Menu — Sanyuka Garden Restaurant</title>
-<meta name="description" content="Wood-fired pizza, fragrant pilau, grilled chicken and Buganda classics — fresh from local farms, served in the gardens of Mengo.">
+<meta name="description" content="Café, restaurant and bar — one garden, morning to midnight. Fresh from local farms, served in the gardens of Mengo.">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -26,59 +26,111 @@
     <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1800&q=80&auto=format&fit=crop" alt="Table of fresh food">
   </div>
   <div class="hero-inner">
-    <span class="eyebrow">From the Garden to Your Plate</span>
+    <span class="eyebrow">One Garden · Morning to Midnight</span>
     <h1 style="font-size:clamp(2.6rem,7vw,5rem);">The <em>Menu</em></h1>
-    <p class="hero-sub">Sourced each morning from Kampala's farmers. Cooked with care, served beneath the trees.</p>
+    <p class="hero-sub">Coffee at dawn, lunch in the shade, drinks under the stars — the garden serves you all day.</p>
   </div>
 </header>
 
 <section class="section light">
-  <div class="wrap" style="max-width:900px;">
+  <div class="wrap" style="max-width:920px;">
 
-    <!-- PIZZA -->
-    <div class="menu-cat reveal">
-      <div class="menu-cat-head"><h2>Wood-fired <em>Pizza</em></h2><div class="menu-cat-line"></div></div>
-      <div class="dish-row"><div><div class="dn">Classic Margherita</div><div class="dd">Local tomatoes, fresh basil, mozzarella, olive oil</div></div><div class="dp">18,000</div></div>
-      <div class="dish-row"><div><div class="dn">Garden Vegetarian</div><div class="dd">Seasonal vegetables from local farmers, herbs, cheese</div></div><div class="dp">16,000</div></div>
-      <div class="dish-row"><div><div class="dn">Farmer's Choice</div><div class="dd">Roasted vegetables, grilled chicken, local spices</div></div><div class="dp">22,000</div></div>
-      <div class="dish-row"><div><div class="dn">Heritage Pepperoni</div><div class="dd">Pepperoni, tomato, mozzarella, oregano</div></div><div class="dp">20,000</div></div>
+    <div class="tabs reveal">
+      <button class="tab active" data-tab="cafe"><span class="tab-name">Café</span><span class="tab-when">Morning</span></button>
+      <button class="tab" data-tab="restaurant"><span class="tab-name">Restaurant</span><span class="tab-when">Day</span></button>
+      <button class="tab" data-tab="bar"><span class="tab-name">Bar</span><span class="tab-when">Evening</span></button>
     </div>
 
-    <!-- PILAU -->
-    <div class="menu-cat reveal">
-      <div class="menu-cat-head"><h2>Fragrant <em>Pilau</em></h2><div class="menu-cat-line"></div></div>
-      <div class="dish-row"><div><div class="dn">Beef Pilau</div><div class="dd">Tender beef, cumin, cinnamon, garden vegetables</div></div><div class="dp">22,000</div></div>
-      <div class="dish-row"><div><div class="dn">Chicken Pilau</div><div class="dd">Succulent chicken, aromatic spices, onions, tomato</div></div><div class="dp">18,000</div></div>
-      <div class="dish-row"><div><div class="dn">Goat Pilau <span style="font-style:italic; color:var(--moss); font-size:0.8rem;">· seasonal</span></div><div class="dd">Lean goat, traditional spices, herbs</div></div><div class="dp">25,000</div></div>
-      <div class="dish-row"><div><div class="dn">Vegetarian Pilau</div><div class="dd">Mixed vegetables, fragrant rice, local spice</div></div><div class="dp">14,000</div></div>
+    <!-- CAFE -->
+    <div class="tab-panel active" id="panel-cafe">
+      <p class="tab-intro">Start slow. Coffee, fresh bakes, and an easy breakfast beneath the trees.</p>
+      <div style="text-align:center;"><span class="draft-note">Sample menu · final items &amp; prices coming</span></div>
+
+      <div class="menu-cat reveal">
+        <div class="menu-cat-head"><h2><em>Coffee</em> &amp; Tea</h2><div class="menu-cat-line"></div></div>
+        <div class="dish-row"><div><div class="dn">Espresso</div><div class="dd">Single or double, rich and bold</div></div><div class="dp">5,000</div></div>
+        <div class="dish-row"><div><div class="dn">Cappuccino</div><div class="dd">Espresso, steamed milk, soft foam</div></div><div class="dp">8,000</div></div>
+        <div class="dish-row"><div><div class="dn">Café Latte</div><div class="dd">Smooth espresso with steamed milk</div></div><div class="dp">8,000</div></div>
+        <div class="dish-row"><div><div class="dn">African Tea (Spiced)</div><div class="dd">Milk tea with ginger and spice</div></div><div class="dp">4,000</div></div>
+        <div class="dish-row"><div><div class="dn">Pot of Black Tea</div><div class="dd">Local leaf, served by the pot</div></div><div class="dp">5,000</div></div>
+      </div>
+
+      <div class="menu-cat reveal">
+        <div class="menu-cat-head"><h2>Bakery &amp; <em>Breakfast</em></h2><div class="menu-cat-line"></div></div>
+        <div class="dish-row"><div><div class="dn">Butter Croissant</div><div class="dd">Baked fresh each morning</div></div><div class="dp">6,000</div></div>
+        <div class="dish-row"><div><div class="dn">Rolex</div><div class="dd">Ugandan classic — egg, chapati, fresh vegetables</div></div><div class="dp">7,000</div></div>
+        <div class="dish-row"><div><div class="dn">Katogo</div><div class="dd">Plantain, beans, eggs, tomato — a Buganda morning</div></div><div class="dp">13,000</div></div>
+        <div class="dish-row"><div><div class="dn">Fresh Fruit Plate</div><div class="dd">Seasonal fruit from the local market</div></div><div class="dp">9,000</div></div>
+        <div class="dish-row"><div><div class="dn">Toast &amp; Eggs</div><div class="dd">Eggs your way, toasted bread, butter</div></div><div class="dp">10,000</div></div>
+      </div>
     </div>
 
-    <!-- CHICKEN -->
-    <div class="menu-cat reveal">
-      <div class="menu-cat-head"><h2>Grilled <em>Chicken</em></h2><div class="menu-cat-line"></div></div>
-      <div class="dish-row"><div><div class="dn">Grilled Chicken Breast</div><div class="dd">Marinated, chargrilled, seasonal vegetables, rice</div></div><div class="dp">16,000</div></div>
-      <div class="dish-row"><div><div class="dn">Chicken Stew</div><div class="dd">Rich tomato sauce, herbs, local spices</div></div><div class="dp">15,000</div></div>
-      <div class="dish-row"><div><div class="dn">Spiced Wings</div><div class="dd">Crispy, Kampala spice blend, dipping sauce</div></div><div class="dp">14,000</div></div>
-      <div class="dish-row"><div><div class="dn">Garden-Herb Chicken</div><div class="dd">Slow-cooked, fresh local herbs, vegetables</div></div><div class="dp">17,000</div></div>
+    <!-- RESTAURANT -->
+    <div class="tab-panel" id="panel-restaurant">
+      <p class="tab-intro">The heart of the garden — fresh from Kampala's farms, cooked with care.</p>
+
+      <div class="menu-cat reveal">
+        <div class="menu-cat-head"><h2>Wood-fired <em>Pizza</em></h2><div class="menu-cat-line"></div></div>
+        <div class="dish-row"><div><div class="dn">Classic Margherita</div><div class="dd">Local tomatoes, fresh basil, mozzarella, olive oil</div></div><div class="dp">18,000</div></div>
+        <div class="dish-row"><div><div class="dn">Garden Vegetarian</div><div class="dd">Seasonal vegetables from local farmers, herbs, cheese</div></div><div class="dp">16,000</div></div>
+        <div class="dish-row"><div><div class="dn">Farmer's Choice</div><div class="dd">Roasted vegetables, grilled chicken, local spices</div></div><div class="dp">22,000</div></div>
+        <div class="dish-row"><div><div class="dn">Heritage Pepperoni</div><div class="dd">Pepperoni, tomato, mozzarella, oregano</div></div><div class="dp">20,000</div></div>
+      </div>
+
+      <div class="menu-cat reveal">
+        <div class="menu-cat-head"><h2>Fragrant <em>Pilau</em></h2><div class="menu-cat-line"></div></div>
+        <div class="dish-row"><div><div class="dn">Beef Pilau</div><div class="dd">Tender beef, cumin, cinnamon, garden vegetables</div></div><div class="dp">22,000</div></div>
+        <div class="dish-row"><div><div class="dn">Chicken Pilau</div><div class="dd">Succulent chicken, aromatic spices, onions, tomato</div></div><div class="dp">18,000</div></div>
+        <div class="dish-row"><div><div class="dn">Goat Pilau <span style="font-style:italic; color:var(--moss); font-size:0.8rem;">· seasonal</span></div><div class="dd">Lean goat, traditional spices, herbs</div></div><div class="dp">25,000</div></div>
+        <div class="dish-row"><div><div class="dn">Vegetarian Pilau</div><div class="dd">Mixed vegetables, fragrant rice, local spice</div></div><div class="dp">14,000</div></div>
+      </div>
+
+      <div class="menu-cat reveal">
+        <div class="menu-cat-head"><h2>Grilled <em>Chicken</em></h2><div class="menu-cat-line"></div></div>
+        <div class="dish-row"><div><div class="dn">Grilled Chicken Breast</div><div class="dd">Marinated, chargrilled, seasonal vegetables, rice</div></div><div class="dp">16,000</div></div>
+        <div class="dish-row"><div><div class="dn">Chicken Stew</div><div class="dd">Rich tomato sauce, herbs, local spices</div></div><div class="dp">15,000</div></div>
+        <div class="dish-row"><div><div class="dn">Spiced Wings</div><div class="dd">Crispy, Kampala spice blend, dipping sauce</div></div><div class="dp">14,000</div></div>
+        <div class="dish-row"><div><div class="dn">Garden-Herb Chicken</div><div class="dd">Slow-cooked, fresh local herbs, vegetables</div></div><div class="dp">17,000</div></div>
+      </div>
+
+      <div class="menu-cat reveal">
+        <div class="menu-cat-head"><h2>Buganda <em>Classics</em></h2><div class="menu-cat-line"></div></div>
+        <div class="dish-row"><div><div class="dn">Matooke</div><div class="dd">Steamed plantain, groundnut sauce, beans — the heart of the table</div></div><div class="dp">12,000</div></div>
+        <div class="dish-row"><div><div class="dn">Luwombo <span style="font-style:italic; color:var(--moss); font-size:0.8rem;">· seasonal</span></div><div class="dd">Meat or chicken steamed in banana leaves with vegetables</div></div><div class="dp">20,000</div></div>
+        <div class="dish-row"><div><div class="dn">Katogo</div><div class="dd">Fried plantain, beans, eggs, tomato — a Buganda morning</div></div><div class="dp">13,000</div></div>
+        <div class="dish-row"><div><div class="dn">Posho &amp; Beans</div><div class="dd">Cornmeal with beans and vegetable sauce</div></div><div class="dp">10,000</div></div>
+        <div class="dish-row"><div><div class="dn">Sukuma Wiki</div><div class="dd">Sautéed greens, onion, tomato, garlic</div></div><div class="dp">11,000</div></div>
+      </div>
     </div>
 
-    <!-- BUGANDA CLASSICS -->
-    <div class="menu-cat reveal">
-      <div class="menu-cat-head"><h2>Buganda <em>Classics</em></h2><div class="menu-cat-line"></div></div>
-      <div class="dish-row"><div><div class="dn">Matooke</div><div class="dd">Steamed plantain, groundnut sauce, beans — the heart of the table</div></div><div class="dp">12,000</div></div>
-      <div class="dish-row"><div><div class="dn">Luwombo <span style="font-style:italic; color:var(--moss); font-size:0.8rem;">· seasonal</span></div><div class="dd">Meat or chicken steamed in banana leaves with vegetables</div></div><div class="dp">20,000</div></div>
-      <div class="dish-row"><div><div class="dn">Katogo</div><div class="dd">Fried plantain, beans, eggs, tomato — a Buganda morning</div></div><div class="dp">13,000</div></div>
-      <div class="dish-row"><div><div class="dn">Posho & Beans</div><div class="dd">Cornmeal with beans and vegetable sauce</div></div><div class="dp">10,000</div></div>
-      <div class="dish-row"><div><div class="dn">Sukuma Wiki</div><div class="dd">Sautéed greens, onion, tomato, garlic</div></div><div class="dp">11,000</div></div>
-    </div>
+    <!-- BAR -->
+    <div class="tab-panel" id="panel-bar">
+      <p class="tab-intro">As the light fades — cocktails, cold beer, and good company under the stars.</p>
+      <div style="text-align:center;"><span class="draft-note">Sample menu · final items &amp; prices coming</span></div>
 
-    <!-- DRINKS -->
-    <div class="menu-cat reveal">
-      <div class="menu-cat-head"><h2><em>Drinks</em></h2><div class="menu-cat-line"></div></div>
-      <div class="dish-row"><div><div class="dn">Fresh Juice</div><div class="dd">Orange, passion or mango — seasonal</div></div><div class="dp">4,000</div></div>
-      <div class="dish-row"><div><div class="dn">Tea or Coffee</div><div class="dd">Served with or without milk</div></div><div class="dp">2,500</div></div>
-      <div class="dish-row"><div><div class="dn">Soft Drinks</div><div class="dd">Cola, Fanta, Sprite</div></div><div class="dp">3,000</div></div>
-      <div class="dish-row"><div><div class="dn">Bottled Water</div><div class="dd">Chilled</div></div><div class="dp">2,000</div></div>
+      <div class="menu-cat reveal">
+        <div class="menu-cat-head"><h2>Signature <em>Cocktails</em></h2><div class="menu-cat-line"></div></div>
+        <div class="dish-row"><div><div class="dn">Garden Gin &amp; Tonic</div><div class="dd">Gin, tonic, fresh garden herbs and citrus</div></div><div class="dp">18,000</div></div>
+        <div class="dish-row"><div><div class="dn">Sanyuka Sunset</div><div class="dd">Passion fruit, rum, a hint of ginger</div></div><div class="dp">20,000</div></div>
+        <div class="dish-row"><div><div class="dn">Tropical Mojito</div><div class="dd">White rum, lime, mint, soda</div></div><div class="dp">18,000</div></div>
+        <div class="dish-row"><div><div class="dn">Virgin Mocktail</div><div class="dd">Fresh fruit, no alcohol — ask for today's blend</div></div><div class="dp">12,000</div></div>
+      </div>
+
+      <div class="menu-cat reveal">
+        <div class="menu-cat-head"><h2>Beer &amp; <em>Wine</em></h2><div class="menu-cat-line"></div></div>
+        <div class="dish-row"><div><div class="dn">Local Beer</div><div class="dd">Bell, Nile Special, Club — chilled</div></div><div class="dp">6,000</div></div>
+        <div class="dish-row"><div><div class="dn">Imported Beer</div><div class="dd">Selection of international labels</div></div><div class="dp">10,000</div></div>
+        <div class="dish-row"><div><div class="dn">House Wine</div><div class="dd">Red or white, by the glass</div></div><div class="dp">15,000</div></div>
+        <div class="dish-row"><div><div class="dn">Bottle of Wine</div><div class="dd">Ask for our current selection</div></div><div class="dp">60,000</div></div>
+      </div>
+
+      <div class="menu-cat reveal">
+        <div class="menu-cat-head"><h2>Spirits &amp; <em>Soft</em></h2><div class="menu-cat-line"></div></div>
+        <div class="dish-row"><div><div class="dn">House Spirits</div><div class="dd">Whisky, gin, vodka, rum — single tot</div></div><div class="dp">8,000</div></div>
+        <div class="dish-row"><div><div class="dn">Soft Drinks</div><div class="dd">Cola, Fanta, Sprite</div></div><div class="dp">3,000</div></div>
+        <div class="dish-row"><div><div class="dn">Fresh Juice</div><div class="dd">Orange, passion or mango — seasonal</div></div><div class="dp">4,000</div></div>
+        <div class="dish-row"><div><div class="dn">Bottled Water</div><div class="dd">Chilled</div></div><div class="dp">2,000</div></div>
+      </div>
     </div>
 
   </div>

@@ -252,6 +252,30 @@ h1, h2, h3, h4 { font-family: var(--display); font-weight: 400; line-height: 1.0
 .fg textarea { min-height: 130px; resize: vertical; }
 .fg-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1.4rem; }
 
+/* ---------- MENU TABS ---------- */
+
+.tabs { display: flex; justify-content: center; gap: clamp(0.5rem, 2vw, 1.5rem); flex-wrap: wrap;
+  margin-bottom: clamp(2.5rem, 6vw, 4rem); border-bottom: 1px solid rgba(47,93,67,0.15); padding-bottom: 0; }
+.tab { background: none; border: none; cursor: pointer; font-family: var(--body);
+  padding: 0.9rem 1.4rem 1.1rem; position: relative; color: var(--moss); transition: color 0.3s var(--ease); }
+.tab .tab-name { display: block; font-family: var(--display); font-size: clamp(1.3rem, 3vw, 1.9rem); font-weight: 400; line-height: 1; }
+.tab .tab-when { display: block; font-size: 0.66rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; margin-top: 0.4rem; opacity: 0.7; }
+.tab::after { content: ''; position: absolute; left: 0; right: 0; bottom: -1px; height: 2px; background: var(--gold); transform: scaleX(0); transition: transform 0.35s var(--ease); }
+.tab:hover { color: var(--forest); }
+.tab.active { color: var(--forest); }
+.tab.active .tab-name { font-style: italic; }
+.tab.active::after { transform: scaleX(1); }
+
+.tab-panel { display: none; }
+.tab-panel.active { display: block; animation: fadein 0.5s var(--ease); }
+
+.draft-note { display: inline-block; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--clay); background: rgba(156,74,60,0.08);
+  border: 1px solid rgba(156,74,60,0.25); border-radius: 2px; padding: 0.5rem 1rem; margin-bottom: 2rem; }
+
+.tab-intro { font-family: var(--display); font-style: italic; font-weight: 300; font-size: clamp(1.1rem, 2.2vw, 1.5rem);
+  color: var(--moss); text-align: center; margin-bottom: 2.5rem; }
+
 /* ---------- FOOTER ---------- */
 
 .footer { background: var(--canopy); color: var(--sage); padding: clamp(3rem, 7vw, 5rem) clamp(1.25rem, 5vw, 4rem) 2rem; }
